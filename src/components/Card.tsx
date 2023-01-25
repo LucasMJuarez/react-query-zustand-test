@@ -2,6 +2,7 @@ import React from "react";
 import { Repository } from "../hooks/types";
 import { useFavoriteReposStore } from "../store/favoriteRepos";
 
+
 type CardProps = {
   repository: Repository;
   isFavorite: boolean;
@@ -14,7 +15,6 @@ function Card({ repository: repo, isFavorite }: CardProps) {
   const removeFavoriteRepo = useFavoriteReposStore(
     (state) => state.removeFavoriteRepo
   );
-
 
   const toggleFavorite = () => {
     if (isFavorite) {
