@@ -4,7 +4,7 @@ import { useFetchRepositories } from "./hooks/useRepos";
 import { useFavoriteReposStore } from "./store/favoriteRepos";
 
 function App() {
-  const { data, isLoading } = useFetchRepositories();
+  const { data, isLoading} = useFetchRepositories('LucasMJuarez');
   const { favoriteReposIds } = useFavoriteReposStore();
 
   if (isLoading) return <div>Loading...</div>;
