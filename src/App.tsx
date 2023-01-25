@@ -14,6 +14,7 @@ function App() {
     <div>
       {data?.map((repo) => (
         <Card repository={repo} 
+        key={repo.id}
         isFavorite={favoriteReposIds.includes(repo.id)}/>
       ))}
     </div>
