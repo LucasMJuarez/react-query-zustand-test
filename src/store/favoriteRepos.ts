@@ -6,7 +6,7 @@ type favoriteReposState = {
     removeFavoritesRepo: (id: number) => void;
 };
 
-const useFavoriteReposStore = create<favoriteReposState>(() => ({
+export const useFavoriteReposStore = create<favoriteReposState>(() => ({
     favoriteReposIds: [],
     addFavoritesRepo: (id: number) => {},
     removeFavoritesRepo: (id: number) => {}
